@@ -33,41 +33,28 @@
     font-size: 1.5rem;
     text-align: center;
   }
-
-  .samsung {
-    display: none;
-  }
-
 </style>
 
 <header>
   <h1>BG1 Start</h1>
 </header>
 
-<aside class="warning samsung">
-  <p><strong>Samsung users:</strong> Bookmarklets are no longer supported by the Samsung Internet browser. To continue using BG1, you will need to set it up in Chrome instead. <a href="https://joelface.github.io/bg1/#chrome">Please follow these instructions</a>.</p>
-
-  <p>Sorry for the inconvenience!</p>
+<aside class="warning">
+  <p>As of July 18, BG1 is no longer able to book Genie+ Lightning Lanes due to changes made by Disney. Sorry!</p>
 </aside>
-
-<script>
-  if (navigator.userAgent.includes('SamsungBrowser')) {
-    document.querySelector('.samsung')?.classList.remove('samsung');
-  }
-</script>
 
 <main>
   <nav>
     <h2>Walt Disney World</h2>
     <ul class="buttons">
-      <li><a href="https://disneyworld.disney.go.com/vas/">Genie+</a></li>
       <li><a href="https://vqguest-svc-wdw.wdprapps.disney.com/application/v1/guest/getQueues">Virtual Queue</a></li>
+      <li><a href="https://disneyworld.disney.go.com/vas/">DAS / Times</a></li>
     </ul>
 
     <h2>Disneyland</h2>
     <ul class="buttons">
-      <li><a href="https://disneyland.disney.go.com/vas/">Genie+</a></li>
       <li><a href="https://vqguest-svc.wdprapps.disney.com/application/v1/guest/getQueues">Virtual Queue</a></li>
+      <li><a href="https://disneyland.disney.go.com/vas/">DAS / Times</a></li>
     </ul>
   </nav>
 
@@ -75,11 +62,6 @@
     <label><input type="checkbox"> <span>Skip bookmarklet reminder</span></label>
   </div>
 </main>
-
-<div class="donate">
-  <div>Want to help support BG1?</div>
-  <div><a href="contact.html#donate" class="button">Donate</a></div>
-</div>
 
 <footer>
   <ul>
