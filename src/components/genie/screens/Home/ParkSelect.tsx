@@ -31,7 +31,7 @@ export default function ParkSelect(props: { className?: string }) {
       options={parkOptions}
       selected={park.id}
       onChange={setPark}
-      disabled={!!rebooking.current}
+      disabled={!rebooking.current} {/* Negate the condition */} 
       title="Park"
       data-testid="park-select"
     />
